@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { BootstrapInput } from "./Bootstrap";
 import { useDispatch } from "react-redux";
 import { region, search } from "../utils/FilterSlice";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 
 function Filter() {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ function Filter() {
     <div className="w-full flex justify-around sm:justify-between align-middle sm:px-[3.75rem] mt-10">
       <FormControl>
         <InputLabel className='flex'>
-          <SearchIcon />
+          {/* <SearchIcon /> */}
            <p className='ml-5'>search for a country...</p>
         </InputLabel>
         <BootstrapInput
