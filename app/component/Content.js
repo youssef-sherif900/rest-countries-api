@@ -18,9 +18,10 @@ function Content() {
       {
         Array.isArray(searchData)
          ?
-         searchData.map((country) => {
+         searchData.map((country , i) => {
           return (
             <Countery
+            key={i}
               name={country.name.common}
               population={country.population.toLocaleString("en", {
                 useGrouping: true,
@@ -38,9 +39,10 @@ function Content() {
         <InitialData />
       ) : (
           Array.isArray(regionData) ?
-        regionData?.map((country) => {
+        regionData?.map((country , i) => {
           return (
             <Countery
+            key={i}
               name={country.name.common}
               population={country.population.toLocaleString("en", {
                 useGrouping: true,

@@ -1,13 +1,15 @@
 "use client";
-import { Inter } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
-
-
 import {Provider} from 'react-redux'
 import store from './utils/store'
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Nunito_Sans({
+   weight:['400' , '700'],
+   subsets: ["latin"],
+   display:'swap' 
+  });
 
 
 

@@ -10,9 +10,10 @@ function InitialData() {
     <CircularProgress className=" self-center md:self-end " color="inherit" />
     </div>
   ) : (
-      data.slice(0, 12).map((country) => {
+      data.slice(0, 12).map((country , i) => {
         return (
           <Countery
+          key={i}
             name={country.name.common}
             population={country.population.toLocaleString("en", {
               useGrouping: true,
