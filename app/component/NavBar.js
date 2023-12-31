@@ -14,11 +14,11 @@ function NavBar() {
 
   return (
     <AppBar position="static" className="flex flex-row p-5">
-      <Typography varient="h1" className="grow sm:ml-10 text-lg sm:text-2xl whitespace-nowrap">
+      <Typography  className="mr-auto sm:ml-10 text-lg font-bold sm:text-2xl whitespace-nowrap">
         Where in the world?
       </Typography>
       <button className="sm:mr-10" onClick={handleTheme}>
-        <Typography variant="body1" className="flex whitespace-nowrap">
+        <Typography variant="body1" className="flex font-semibold whitespace-nowrap">
           {theme.palette.mode === "light" ? <LightMoon /> : <DarkMoon />}
           Dark Mode
         </Typography>
