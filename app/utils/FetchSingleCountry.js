@@ -14,7 +14,7 @@ const useFetchSingleCountry = (country) =>{
         }
         fetch(country)
         return
-    },[])
+    },[country])
 
     return countryData
 }

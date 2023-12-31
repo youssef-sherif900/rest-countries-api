@@ -74,13 +74,17 @@ function Country() {
             <div className="ml-5 flex flex-col sm:flex-row align-middle">
               <p className="font-semibold sm:mr-1 p-1 whitespace-nowrap mb-2 sm:mb-0 ">Border Countries:</p>
               <div className="flex ">
-                {countryData?.borders?.map((el , i) => {
+                {countryData?.borders  ? countryData?.borders?.map((el , i) => {
                   return (
                     <Paper key={i} className="p-2 mx-2 px-3" elevation={2}>
                       <p className="text-xs">{el}</p>
                     </Paper>
                   );
-                })}
+                })
+                : <Paper className="p-2 mx-2 px-3">
+                 No Borders
+                </Paper>
+                }
               </div>
             </div>
           </div>
