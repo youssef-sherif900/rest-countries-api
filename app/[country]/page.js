@@ -49,7 +49,7 @@ function Country() {
             />
           </div>
           <div className="flex flex-col p-5 w-1/2 sm:mt-10 h-5/6 sm:justify-between">
-            <Typography sx={{ marginLeft: "1rem" }} className="text-4xl mb-4">
+            <Typography sx={{ marginLeft: "1rem", fontSize:'2.25rem' , lineHight:'2.5rem', fontWeight:'bold' }} className="mb-4">
               {countryData?.name?.common}
             </Typography>
             <div className=" px-5 py-2 sm:p-5 grid w-full h-[70%] sm:h-1/2 items-center  grid-cols-1 sm:grid-cols-2 sm:grid-rows-5 sm:gap-8">
